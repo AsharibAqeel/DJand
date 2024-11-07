@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static 'portfolio/portfolio.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo"><span>Ash</span>arib</a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    
+    <nav class="navbar">
+      <a href="" class="active">Portfolio</a>
+      <a href="#about" class="active"> About</a>
+      <a href="#services" class="active">Services</a>
+    </nav>
+ 
+    <a href="#" class="contact">Contact Me</a>
+  </header>
+     
+  <section class="home">
+    <div class="img-box">
+        <img src="{% static 'portfolio/a1.PNG' %}" alt="arshoo">
+    </div>
+    <div class="home-content">
+      <h3>Hi</h3>
+      <h1>I'm<span>Asharib<br></span>Frontend Developer</h1>
+
+      <div class="btn-box">
+        <button class="btn1">Hire Me</button>
+        <button class="btn2">Experience</button>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-img">
+        <img src="{% static 'portfolio/a1.PNG' %}" alt="arshoo">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About<span>Me</span></h2>
+      <h3>Frontend <span>Developer</span></h3>
+      <p>It's me Asharib Aqeel. I do work in Nsquare. I have 
+         6 Month experience in Frontend at TylexTech and Mart of 
+         Tech as a Junior Web Developer. Now I'm working on Html 
+         And Css in Nsquare.
+      </p>
+      <a href="" class="btn2">Download Cv</a>
+    </div>
+  </section>
+
+  <section class="Services" id="services">
+    <div class="service-content" >
+      <h2 class="heading">Services</h2>
+      <p>I will provide Frontend service bcz I'm Frontend Developer.
+        I will take task and give back in time. If u will make anything
+        in Html Css kindly contact with me I will done your task in 
+        time.
+      </p>
+      <div class="container">
+        <div class="box box1">
+          <div class="box-content">
+            <h3>Html</h3><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+          </div>
+        </div>
+        <div class="box box2">
+          <div class="box-content">
+            <h3>Css</h3><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+          </div>
+        </div>
+        <div class="box box3">
+          <div class="box-content">
+            <h3>Bosstrap</h3><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+          </div>
+        </div>
+        <div class="box box4">
+          <div class="box-content">
+            <h3>Java Script</h3><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
+
